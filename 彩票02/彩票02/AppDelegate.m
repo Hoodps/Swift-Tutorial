@@ -1,14 +1,12 @@
 //
 //  AppDelegate.m
-//  weibo_1
+//  彩票02
 //
-//  Created by xiexz on 15/12/20.
+//  Created by xiexz on 15/12/23.
 //  Copyright © 2015年 xiexz. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "IWTabBarViewController.h"
-#import "IWOAuthController.h"
 
 @interface AppDelegate ()
 
@@ -19,11 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[IWOAuthController alloc] init];
-    [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

@@ -16,6 +16,9 @@
 		1C891E8E1C265CC000B83D24 /* IWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C891E7F1C265CC000B83D24 /* IWMeViewController.m */; };
 		1C891E8F1C265CC000B83D24 /* IWMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C891E851C265CC000B83D24 /* IWMessageViewController.m */; };
 		1C891E901C265CC000B83D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C891E8A1C265CC000B83D24 /* AppDelegate.m */; };
+		1C891E961C26694F00B83D24 /* UIImage+HO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C891E951C26694F00B83D24 /* UIImage+HO.m */; };
+		1C891E991C26744100B83D24 /* IWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C891E981C26744100B83D24 /* IWTabBar.m */; };
+		1CA293F31C26F72500C8525A /* IWOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA293F21C26F72500C8525A /* IWOAuthController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		1C891E891C265CC000B83D24 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C891E8A1C265CC000B83D24 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1C891E921C26605900B83D24 /* iOSSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSample-Prefix.pch"; sourceTree = "<group>"; };
+		1C891E941C26694F00B83D24 /* UIImage+HO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HO.h"; sourceTree = "<group>"; };
+		1C891E951C26694F00B83D24 /* UIImage+HO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HO.m"; sourceTree = "<group>"; };
+		1C891E971C26744100B83D24 /* IWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBar.h; sourceTree = "<group>"; };
+		1C891E981C26744100B83D24 /* IWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBar.m; sourceTree = "<group>"; };
+		1CA293F11C26F72500C8525A /* IWOAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWOAuthController.h; sourceTree = "<group>"; };
+		1CA293F21C26F72500C8525A /* IWOAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWOAuthController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +189,8 @@
 			children = (
 				1C891E781C265CC000B83D24 /* IWTabBarViewController.h */,
 				1C891E791C265CC000B83D24 /* IWTabBarViewController.m */,
+				1CA293F11C26F72500C8525A /* IWOAuthController.h */,
+				1CA293F21C26F72500C8525A /* IWOAuthController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +205,8 @@
 		1C891E7B1C265CC000B83D24 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1C891E971C26744100B83D24 /* IWTabBar.h */,
+				1C891E981C26744100B83D24 /* IWTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,11 +280,21 @@
 		1C891E881C265CC000B83D24 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1C891E931C2668A200B83D24 /* Category */,
 				1C891E891C265CC000B83D24 /* AppDelegate.h */,
 				1C891E8A1C265CC000B83D24 /* AppDelegate.m */,
 				1C891E921C26605900B83D24 /* iOSSample-Prefix.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		1C891E931C2668A200B83D24 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1C891E941C26694F00B83D24 /* UIImage+HO.h */,
+				1C891E951C26694F00B83D24 /* UIImage+HO.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,8 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C891E991C26744100B83D24 /* IWTabBar.m in Sources */,
+				1CA293F31C26F72500C8525A /* IWOAuthController.m in Sources */,
 				1C891E8E1C265CC000B83D24 /* IWMeViewController.m in Sources */,
 				1C891E8D1C265CC000B83D24 /* IWTabBarViewController.m in Sources */,
+				1C891E961C26694F00B83D24 /* UIImage+HO.m in Sources */,
 				1C891E8C1C265CC000B83D24 /* IWHomeViewController.m in Sources */,
 				1C891E901C265CC000B83D24 /* AppDelegate.m in Sources */,
 				1C891E8F1C265CC000B83D24 /* IWMessageViewController.m in Sources */,
