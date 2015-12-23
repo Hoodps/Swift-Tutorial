@@ -18,14 +18,30 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    [self.tabBar removeFromSuperview];
     
     ILTabBar *tabBar = [[ILTabBar alloc] init];
-    tabBar.frame = self.tabBar.frame;
     
+    //在stroyboard 隐藏的是系统自带的tabBar，所以不能去掉
+    //[self.tabBar removeFromSuperview];
+    //tabBar.frame = self.tabBar.frame;
+    //[self.view addSubview:tabBar];
+    
+    //这样就可以push去掉tabbar
+    tabBar.frame =self.tabBar.bounds;
+    [self.tabBar addSubview:tabBar];
     tabBar.delegate = self;
-    [self.view addSubview:tabBar];
     
+    //由控制器管理
+    NSString *imageName = nil;
+    NSString *selectedImage = nil;
+    for (int i = 0; i < self.childViewControllers.count; i++) {
+        
+        imageName = [NSString stringWithFormat:@"TabBar%d", i + 1];
+        selectedImage = [NSString stringWithFormat:@"TabBar%dSel", i + 1];
+        
+        [tabBar addTabBarButtonWithName:imageName selectedImage:selectedImage];
+    }
+
     
     //self.selectedIndex = 2;
 }

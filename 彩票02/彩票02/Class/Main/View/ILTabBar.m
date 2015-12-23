@@ -19,9 +19,20 @@
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        [self addBtns];
+        //[self addBtns];
     }
     return self;
+}
+
+- (void)addTabBarButtonWithName:(NSString *)name selectedImage:(NSString *)selectedImage{
+    ILTabBarButton *btn = [ILTabBarButton buttonWithType:UIButtonTypeCustom];
+    
+    [btn setBackgroundImage:[UIImage imageNamed:name] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:selectedImage] forState:UIControlStateSelected];
+    
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
+    [self addSubview:btn];
+    
 }
 
 - (void)addBtns{
@@ -77,6 +88,10 @@
         btn.tag = i;
         btnX = i * btnW;
         btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
+        
+        if (i == 0 ) {
+            [self btnClick:btn];
+        }
     }
 }
 

@@ -15,6 +15,9 @@
 		1C5271C81C2AD05E00495B39 /* ILTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271C71C2AD05E00495B39 /* ILTabBarViewController.m */; };
 		1C5271CB1C2AD27D00495B39 /* ILTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271CA1C2AD27D00495B39 /* ILTabBar.m */; };
 		1C5271CE1C2AD91F00495B39 /* ILTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271CD1C2AD91F00495B39 /* ILTabBarButton.m */; };
+		1C5271D11C2AE7AD00495B39 /* ILHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271D01C2AE7AD00495B39 /* ILHallViewController.m */; };
+		1C5271D41C2AF05600495B39 /* ILNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271D31C2AF05600495B39 /* ILNavigationController.m */; };
+		1C5271D71C2AF74100495B39 /* ILTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271D61C2AF74100495B39 /* ILTitleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		1C5271CA1C2AD27D00495B39 /* ILTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTabBar.m; sourceTree = "<group>"; };
 		1C5271CC1C2AD91F00495B39 /* ILTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTabBarButton.h; sourceTree = "<group>"; };
 		1C5271CD1C2AD91F00495B39 /* ILTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTabBarButton.m; sourceTree = "<group>"; };
+		1C5271CF1C2AE7AD00495B39 /* ILHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILHallViewController.h; sourceTree = "<group>"; };
+		1C5271D01C2AE7AD00495B39 /* ILHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILHallViewController.m; sourceTree = "<group>"; };
+		1C5271D21C2AF05600495B39 /* ILNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILNavigationController.h; sourceTree = "<group>"; };
+		1C5271D31C2AF05600495B39 /* ILNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILNavigationController.m; sourceTree = "<group>"; };
+		1C5271D51C2AF74100495B39 /* ILTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTitleButton.h; sourceTree = "<group>"; };
+		1C5271D61C2AF74100495B39 /* ILTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTitleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,8 @@
 		1C5271B51C2ACEE800495B39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1C5271D51C2AF74100495B39 /* ILTitleButton.h */,
+				1C5271D61C2AF74100495B39 /* ILTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -139,6 +150,8 @@
 		1C5271B71C2ACEE800495B39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1C5271CF1C2AE7AD00495B39 /* ILHallViewController.h */,
+				1C5271D01C2AE7AD00495B39 /* ILHallViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +185,8 @@
 			children = (
 				1C5271C61C2AD05E00495B39 /* ILTabBarViewController.h */,
 				1C5271C71C2AD05E00495B39 /* ILTabBarViewController.m */,
+				1C5271D21C2AF05600495B39 /* ILNavigationController.h */,
+				1C5271D31C2AF05600495B39 /* ILNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,9 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5271D11C2AE7AD00495B39 /* ILHallViewController.m in Sources */,
 				1C5271CE1C2AD91F00495B39 /* ILTabBarButton.m in Sources */,
+				1C5271D41C2AF05600495B39 /* ILNavigationController.m in Sources */,
 				1C52719F1C2ACBF300495B39 /* AppDelegate.m in Sources */,
 				1C52719C1C2ACBF300495B39 /* main.m in Sources */,
+				1C5271D71C2AF74100495B39 /* ILTitleButton.m in Sources */,
 				1C5271CB1C2AD27D00495B39 /* ILTabBar.m in Sources */,
 				1C5271C81C2AD05E00495B39 /* ILTabBarViewController.m in Sources */,
 			);

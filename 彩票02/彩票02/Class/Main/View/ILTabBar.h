@@ -21,4 +21,6 @@
 
 @property (nonatomic, weak) id<ILTabBarDelegate> delegate;
 
+- (void)addTabBarButtonWithName:(NSString *)name selectedImage:(NSString *)selectedImage;
+
 @end
