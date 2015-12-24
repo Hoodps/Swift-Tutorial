@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1335171C2C1E8900254DFB /* ILLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1335161C2C1E8900254DFB /* ILLoginViewController.m */; };
+		1C13351B1C2C241A00254DFB /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C13351A1C2C241A00254DFB /* UIImage+Tool.m */; };
+		1C1335251C2C2F6200254DFB /* ILSetingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1335241C2C2F6200254DFB /* ILSetingTableViewController.m */; };
 		1C52719C1C2ACBF300495B39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52719B1C2ACBF300495B39 /* main.m */; };
 		1C52719F1C2ACBF300495B39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C52719E1C2ACBF300495B39 /* AppDelegate.m */; };
 		1C5271A51C2ACBF300495B39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5271A31C2ACBF300495B39 /* Main.storyboard */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1335151C2C1E8900254DFB /* ILLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILLoginViewController.h; sourceTree = "<group>"; };
+		1C1335161C2C1E8900254DFB /* ILLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILLoginViewController.m; sourceTree = "<group>"; };
+		1C1335191C2C241A00254DFB /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
+		1C13351A1C2C241A00254DFB /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
+		1C1335231C2C2F6200254DFB /* ILSetingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSetingTableViewController.h; sourceTree = "<group>"; };
+		1C1335241C2C2F6200254DFB /* ILSetingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSetingTableViewController.m; sourceTree = "<group>"; };
 		1C5271971C2ACBF300495B39 /* 彩票02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C52719B1C2ACBF300495B39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C52719D1C2ACBF300495B39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +63,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C1335111C2C1E3900254DFB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				1C1335121C2C1E3900254DFB /* Controller */,
+				1C1335131C2C1E3900254DFB /* Model */,
+				1C1335141C2C1E3900254DFB /* View */,
+			);
+			name = Mine;
+			path = Main/Mine;
+			sourceTree = "<group>";
+		};
+		1C1335121C2C1E3900254DFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C1335151C2C1E8900254DFB /* ILLoginViewController.h */,
+				1C1335161C2C1E8900254DFB /* ILLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C1335131C2C1E3900254DFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C1335141C2C1E3900254DFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C1335181C2C23D700254DFB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1C1335191C2C241A00254DFB /* UIImage+Tool.h */,
+				1C13351A1C2C241A00254DFB /* UIImage+Tool.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1C13351C1C2C262900254DFB /* Seting */ = {
+			isa = PBXGroup;
+			children = (
+				1C13351D1C2C262900254DFB /* Controller */,
+				1C13351E1C2C262900254DFB /* Model */,
+				1C13351F1C2C262900254DFB /* View */,
+			);
+			path = Seting;
+			sourceTree = "<group>";
+		};
+		1C13351D1C2C262900254DFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C1335231C2C2F6200254DFB /* ILSetingTableViewController.h */,
+				1C1335241C2C2F6200254DFB /* ILSetingTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C13351E1C2C262900254DFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C13351F1C2C262900254DFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1C52718E1C2ACBF300495B39 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +181,8 @@
 		1C5271B11C2ACEE800495B39 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1C13351C1C2C262900254DFB /* Seting */,
+				1C1335111C2C1E3900254DFB /* Mine */,
 				1C5271B21C2ACEE800495B39 /* Buy */,
 				1C5271B61C2ACEE800495B39 /* Hall */,
 				1C5271BA1C2ACEE800495B39 /* Main */,
@@ -212,6 +299,7 @@
 		1C5271C21C2ACEE800495B39 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1C1335181C2C23D700254DFB /* Category */,
 				1C5271C31C2ACEE800495B39 /* Controller */,
 				1C5271C41C2ACEE800495B39 /* Model */,
 				1C5271C51C2ACEE800495B39 /* View */,
@@ -318,6 +406,9 @@
 				1C52719C1C2ACBF300495B39 /* main.m in Sources */,
 				1C5271D71C2AF74100495B39 /* ILTitleButton.m in Sources */,
 				1C5271CB1C2AD27D00495B39 /* ILTabBar.m in Sources */,
+				1C13351B1C2C241A00254DFB /* UIImage+Tool.m in Sources */,
+				1C1335171C2C1E8900254DFB /* ILLoginViewController.m in Sources */,
+				1C1335251C2C2F6200254DFB /* ILSetingTableViewController.m in Sources */,
 				1C5271C81C2AD05E00495B39 /* ILTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +560,7 @@
 				1C5271B01C2ACBF300495B39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

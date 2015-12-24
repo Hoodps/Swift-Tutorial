@@ -31,7 +31,17 @@
                                NSFontAttributeName : [UIFont systemFontOfSize:18]
                                };
         [bar setTitleTextAttributes:dict];
-    }
+        
+        [bar setTintColor:[UIColor whiteColor]];
+        
+        UIBarButtonItem *buttonItem = [UIBarButtonItem appearance];
+        [buttonItem setBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        [buttonItem setBackgroundImage:[UIImage imageNamed:@"NavButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+        
+        [buttonItem setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        [buttonItem setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+        
+   }
 }
 
 @end

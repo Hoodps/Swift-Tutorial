@@ -238,7 +238,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" title="全部彩种" image="YellowDownArrow"/>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="SD0-Wf-Or7"/>
+                        <barButtonItem key="rightBarButtonItem" image="NavInfoFlat" id="SD0-Wf-Or7"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -298,24 +298,51 @@
         <!--我的彩票-->
         <scene sceneID="30J-Wk-A08">
             <objects>
-                <viewController id="QGv-hW-hR1" sceneMemberID="viewController">
+                <viewController id="QGv-hW-hR1" customClass="ILLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QdY-2k-7Ar"/>
                         <viewControllerLayoutGuide type="bottom" id="PuW-9h-PHq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v6B-SZ-S8Z">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.19215947059999999" green="1" blue="0.13056693650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="tAV-9s-tep">
+                                <rect key="frame" x="20" y="80" width="300" height="140"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXz-j8-s5k">
+                                <rect key="frame" x="10" y="267" width="300" height="40"/>
+                                <state key="normal" title="登录" backgroundImage="RedButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DR-PZ-bTb">
+                                <rect key="frame" x="10" y="408" width="300" height="30"/>
+                                <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                <state key="normal" title="Button" backgroundImage="RedButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="我的彩票" id="s97-kr-kPT"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="s97-kr-kPT">
+                        <barButtonItem key="rightBarButtonItem" title="设置" id="cLr-N5-4No">
+                            <connections>
+                                <action selector="setting:" destination="QGv-hW-hR1" id="YaL-9n-9Yz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="CXz-j8-s5k" id="zeO-hi-cxr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrd-Je-qMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="2263"/>
+            <point key="canvasLocation" x="717" y="2320"/>
         </scene>
     </scenes>
     <resources>
+        <image name="LoginScreen" width="150" height="70"/>
+        <image name="NavInfoFlat" width="22" height="22"/>
+        <image name="RedButton" width="61" height="34"/>
         <image name="YellowDownArrow" width="16" height="16"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>
