@@ -1,5 +1,5 @@
 //
-//  ILSettingArrowItem.h
+//  ILSettingSwichItem.h
 //  彩票02
 //
 //  Created by xiexz on 15/12/25.
@@ -8,9 +8,7 @@
 
 #import "ILSettingItem.h"
 
-@interface ILSettingArrowItem : ILSettingItem
+@interface ILSettingSwichItem : ILSettingItem
 
 @property(nonatomic, assign) Class destVcClass;
-
-+ (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title destVaClass:(Class)destVcClass;
 @end

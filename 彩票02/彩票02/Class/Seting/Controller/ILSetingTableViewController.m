@@ -11,6 +11,10 @@
 #import "ILSettingGroup.h"
 #import "ILSettingCell.h"
 
+#import "ILSettingArrowItem.h"
+#import "ILSettingSwichItem.h"
+#import "ILTestViewController.h"
+
 @interface ILSetingTableViewController ()
 
 @property(nonatomic, strong) NSMutableArray *datalist;
@@ -27,16 +31,20 @@
     if (_datalist == nil) {
         _datalist = [NSMutableArray array];
         
-        ILSettingItem *pushNotes = [ILSettingItem itemWithIcon:@"MorePush" title:@"消息推送"];
-        ILSettingItem *yaoyiyao = [ILSettingItem itemWithIcon:@"handShake" title:@"摇一摇选机"];
+        ILSettingArrowItem *pushNotes = [ILSettingArrowItem itemWithIcon:@"MorePush" title:@"消息推送"];
+        
+        pushNotes.destVcClass = [ILTestViewController class];
+        
+        ILSettingItem *yaoyiyao = [ILSettingSwichItem itemWithIcon:@"handShake" title:@"摇一摇选机"];
         //NSArray *group0 = @[pushNotes, yaoyiyao];
         ILSettingGroup *group0 = [[ILSettingGroup alloc] init];
         group0.items = @[pushNotes, yaoyiyao];
         //group0.header = @"头部";
         //group0.footer = @"尾部";
         
-        ILSettingItem *newVersion = [ILSettingItem itemWithIcon:@"MoreUpdate" title:@"检查版本"];
-        ILSettingItem *help = [ILSettingItem itemWithIcon:@"MoreHelp" title:@"帮助"];
+        ILSettingItem *newVersion = [ILSettingSwichItem itemWithIcon:@"MoreUpdate" title:@"检查版本"];
+        ILSettingItem *help = [ILSettingArrowItem itemWithIcon:@"MoreHelp" title:@"帮助"];
+        
         //NSArray *group1 = @[newVersion, help];
         
         ILSettingGroup *group1 = [[ILSettingGroup alloc]init];
@@ -89,6 +97,20 @@
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
     ILSettingGroup *group = self.datalist[section];
     return group.footer;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ILSettingGroup *group = self.datalist[indexPath.section];
+    ILSettingItem *item = group.items[indexPath.row];
+    
+    if ([item isKindOfClass:[ILSettingArrowItem class]]) {
+        ILSettingArrowItem *ArrowItem = (ILSettingArrowItem *)item;
+        
+        UIViewController *vc = [[ArrowItem.destVcClass alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
 }
 @end
 

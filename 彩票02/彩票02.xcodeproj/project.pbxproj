@@ -25,6 +25,9 @@
 		1C5271D11C2AE7AD00495B39 /* ILHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271D01C2AE7AD00495B39 /* ILHallViewController.m */; };
 		1C5271D41C2AF05600495B39 /* ILNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271D31C2AF05600495B39 /* ILNavigationController.m */; };
 		1C5271D71C2AF74100495B39 /* ILTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5271D61C2AF74100495B39 /* ILTitleButton.m */; };
+		1C704E571C2D9CB1005948F2 /* ILTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C704E551C2D9CB1005948F2 /* ILTestViewController.m */; };
+		1C704E581C2D9CB1005948F2 /* ILTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C704E561C2D9CB1005948F2 /* ILTestViewController.xib */; };
+		1C7080271C2D8A2F00455714 /* ILSettingSwichItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7080261C2D8A2F00455714 /* ILSettingSwichItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,11 @@
 		1C5271D31C2AF05600495B39 /* ILNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILNavigationController.m; sourceTree = "<group>"; };
 		1C5271D51C2AF74100495B39 /* ILTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTitleButton.h; sourceTree = "<group>"; };
 		1C5271D61C2AF74100495B39 /* ILTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTitleButton.m; sourceTree = "<group>"; };
+		1C704E541C2D9CB1005948F2 /* ILTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTestViewController.h; sourceTree = "<group>"; };
+		1C704E551C2D9CB1005948F2 /* ILTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTestViewController.m; sourceTree = "<group>"; };
+		1C704E561C2D9CB1005948F2 /* ILTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILTestViewController.xib; sourceTree = "<group>"; };
+		1C7080251C2D8A2F00455714 /* ILSettingSwichItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSettingSwichItem.h; sourceTree = "<group>"; };
+		1C7080261C2D8A2F00455714 /* ILSettingSwichItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSettingSwichItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,9 @@
 			children = (
 				1C1335231C2C2F6200254DFB /* ILSetingTableViewController.h */,
 				1C1335241C2C2F6200254DFB /* ILSetingTableViewController.m */,
+				1C704E541C2D9CB1005948F2 /* ILTestViewController.h */,
+				1C704E551C2D9CB1005948F2 /* ILTestViewController.m */,
+				1C704E561C2D9CB1005948F2 /* ILTestViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +151,8 @@
 		1C13351E1C2C262900254DFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1C7080251C2D8A2F00455714 /* ILSettingSwichItem.h */,
+				1C7080261C2D8A2F00455714 /* ILSettingSwichItem.m */,
 				1C1335261C2C3B8500254DFB /* ILSettingItem.h */,
 				1C1335271C2C3B8500254DFB /* ILSettingItem.m */,
 				1C1335291C2C44E800254DFB /* ILSettingGroup.h */,
@@ -407,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5271AA1C2ACBF300495B39 /* LaunchScreen.storyboard in Resources */,
+				1C704E581C2D9CB1005948F2 /* ILTestViewController.xib in Resources */,
 				1C5271A71C2ACBF300495B39 /* Assets.xcassets in Resources */,
 				1C5271A51C2ACBF300495B39 /* Main.storyboard in Resources */,
 			);
@@ -420,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1335281C2C3B8500254DFB /* ILSettingItem.m in Sources */,
+				1C704E571C2D9CB1005948F2 /* ILTestViewController.m in Sources */,
 				1C13352E1C2C496E00254DFB /* ILSettingCell.m in Sources */,
 				1C5271D11C2AE7AD00495B39 /* ILHallViewController.m in Sources */,
 				1C5271CE1C2AD91F00495B39 /* ILTabBarButton.m in Sources */,
@@ -434,6 +449,7 @@
 				1C1335251C2C2F6200254DFB /* ILSetingTableViewController.m in Sources */,
 				1C5271C81C2AD05E00495B39 /* ILTabBarViewController.m in Sources */,
 				1C4567B31C2D88650021F941 /* ILSettingArrowItem.m in Sources */,
+				1C7080271C2D8A2F00455714 /* ILSettingSwichItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
