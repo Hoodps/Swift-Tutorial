@@ -38,6 +38,8 @@
 		1C7AE89A1C2E3FE700F016A7 /* ILProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE8991C2E3FE700F016A7 /* ILProduct.m */; };
 		1C7AE89E1C2E440300F016A7 /* ILProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE89C1C2E440300F016A7 /* ILProductCell.m */; };
 		1C7AE89F1C2E440300F016A7 /* ILProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C7AE89D1C2E440300F016A7 /* ILProductCell.xib */; };
+		1C7AE8A21C2E59E200F016A7 /* ILPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE8A11C2E59E200F016A7 /* ILPushViewController.m */; };
+		1C7AE8A51C2E5DC600F016A7 /* ILBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE8A41C2E5DC600F016A7 /* ILBaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,10 @@
 		1C7AE89B1C2E440300F016A7 /* ILProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILProductCell.h; sourceTree = "<group>"; };
 		1C7AE89C1C2E440300F016A7 /* ILProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILProductCell.m; sourceTree = "<group>"; };
 		1C7AE89D1C2E440300F016A7 /* ILProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILProductCell.xib; sourceTree = "<group>"; };
+		1C7AE8A01C2E59E200F016A7 /* ILPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILPushViewController.h; sourceTree = "<group>"; };
+		1C7AE8A11C2E59E200F016A7 /* ILPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILPushViewController.m; sourceTree = "<group>"; };
+		1C7AE8A31C2E5DC600F016A7 /* ILBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBaseTableViewController.h; sourceTree = "<group>"; };
+		1C7AE8A41C2E5DC600F016A7 /* ILBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILBaseTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,10 @@
 				1C704E561C2D9CB1005948F2 /* ILTestViewController.xib */,
 				1C7AE88E1C2E2D5B00F016A7 /* ILProduceViewController.h */,
 				1C7AE88F1C2E2D5B00F016A7 /* ILProduceViewController.m */,
+				1C7AE8A01C2E59E200F016A7 /* ILPushViewController.h */,
+				1C7AE8A11C2E59E200F016A7 /* ILPushViewController.m */,
+				1C7AE8A31C2E5DC600F016A7 /* ILBaseTableViewController.h */,
+				1C7AE8A41C2E5DC600F016A7 /* ILBaseTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -508,9 +518,11 @@
 				1C7AE8901C2E2D5B00F016A7 /* ILProduceViewController.m in Sources */,
 				1C704E571C2D9CB1005948F2 /* ILTestViewController.m in Sources */,
 				1C13352E1C2C496E00254DFB /* ILSettingCell.m in Sources */,
+				1C7AE8A51C2E5DC600F016A7 /* ILBaseTableViewController.m in Sources */,
 				1C5271D11C2AE7AD00495B39 /* ILHallViewController.m in Sources */,
 				1C5271CE1C2AD91F00495B39 /* ILTabBarButton.m in Sources */,
 				1C5271D41C2AF05600495B39 /* ILNavigationController.m in Sources */,
+				1C7AE8A21C2E59E200F016A7 /* ILPushViewController.m in Sources */,
 				1C7AE89E1C2E440300F016A7 /* ILProductCell.m in Sources */,
 				1C7AE88D1C2E252B00F016A7 /* MBProgressHUD.m in Sources */,
 				1C7AE89A1C2E3FE700F016A7 /* ILProduct.m in Sources */,
