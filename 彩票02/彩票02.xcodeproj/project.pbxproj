@@ -31,6 +31,13 @@
 		1C7AE88B1C2E252B00F016A7 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE8871C2E252B00F016A7 /* MBProgressHUD+MJ.m */; };
 		1C7AE88C1C2E252B00F016A7 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C7AE8881C2E252B00F016A7 /* MBProgressHUD.bundle */; };
 		1C7AE88D1C2E252B00F016A7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE88A1C2E252B00F016A7 /* MBProgressHUD.m */; };
+		1C7AE8901C2E2D5B00F016A7 /* ILProduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE88F1C2E2D5B00F016A7 /* ILProduceViewController.m */; };
+		1C7AE8951C2E3D1D00F016A7 /* cywt.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C7AE8921C2E3D1D00F016A7 /* cywt.json */; };
+		1C7AE8961C2E3D1D00F016A7 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C7AE8931C2E3D1D00F016A7 /* help.json */; };
+		1C7AE8971C2E3D1D00F016A7 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C7AE8941C2E3D1D00F016A7 /* products.json */; };
+		1C7AE89A1C2E3FE700F016A7 /* ILProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE8991C2E3FE700F016A7 /* ILProduct.m */; };
+		1C7AE89E1C2E440300F016A7 /* ILProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7AE89C1C2E440300F016A7 /* ILProductCell.m */; };
+		1C7AE89F1C2E440300F016A7 /* ILProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C7AE89D1C2E440300F016A7 /* ILProductCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +85,16 @@
 		1C7AE8881C2E252B00F016A7 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		1C7AE8891C2E252B00F016A7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		1C7AE88A1C2E252B00F016A7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1C7AE88E1C2E2D5B00F016A7 /* ILProduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILProduceViewController.h; sourceTree = "<group>"; };
+		1C7AE88F1C2E2D5B00F016A7 /* ILProduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILProduceViewController.m; sourceTree = "<group>"; };
+		1C7AE8921C2E3D1D00F016A7 /* cywt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cywt.json; sourceTree = "<group>"; };
+		1C7AE8931C2E3D1D00F016A7 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
+		1C7AE8941C2E3D1D00F016A7 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		1C7AE8981C2E3FE700F016A7 /* ILProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILProduct.h; sourceTree = "<group>"; };
+		1C7AE8991C2E3FE700F016A7 /* ILProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILProduct.m; sourceTree = "<group>"; };
+		1C7AE89B1C2E440300F016A7 /* ILProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILProductCell.h; sourceTree = "<group>"; };
+		1C7AE89C1C2E440300F016A7 /* ILProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILProductCell.m; sourceTree = "<group>"; };
+		1C7AE89D1C2E440300F016A7 /* ILProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILProductCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +169,8 @@
 				1C704E541C2D9CB1005948F2 /* ILTestViewController.h */,
 				1C704E551C2D9CB1005948F2 /* ILTestViewController.m */,
 				1C704E561C2D9CB1005948F2 /* ILTestViewController.xib */,
+				1C7AE88E1C2E2D5B00F016A7 /* ILProduceViewController.h */,
+				1C7AE88F1C2E2D5B00F016A7 /* ILProduceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +186,8 @@
 				1C13352A1C2C44E800254DFB /* ILSettingGroup.m */,
 				1C4567B11C2D88650021F941 /* ILSettingArrowItem.h */,
 				1C4567B21C2D88650021F941 /* ILSettingArrowItem.m */,
+				1C7AE8981C2E3FE700F016A7 /* ILProduct.h */,
+				1C7AE8991C2E3FE700F016A7 /* ILProduct.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +197,9 @@
 			children = (
 				1C13352C1C2C496E00254DFB /* ILSettingCell.h */,
 				1C13352D1C2C496E00254DFB /* ILSettingCell.m */,
+				1C7AE89B1C2E440300F016A7 /* ILProductCell.h */,
+				1C7AE89C1C2E440300F016A7 /* ILProductCell.m */,
+				1C7AE89D1C2E440300F016A7 /* ILProductCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +223,7 @@
 		1C5271991C2ACBF300495B39 /* 彩票02 */ = {
 			isa = PBXGroup;
 			children = (
+				1C7AE8911C2E3D1D00F016A7 /* Data */,
 				1C5271B11C2ACEE800495B39 /* Class */,
 				1C52719D1C2ACBF300495B39 /* AppDelegate.h */,
 				1C52719E1C2ACBF300495B39 /* AppDelegate.m */,
@@ -390,6 +415,17 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		1C7AE8911C2E3D1D00F016A7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1C7AE8921C2E3D1D00F016A7 /* cywt.json */,
+				1C7AE8931C2E3D1D00F016A7 /* help.json */,
+				1C7AE8941C2E3D1D00F016A7 /* products.json */,
+			);
+			name = Data;
+			path = Class/Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,11 +484,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7AE8951C2E3D1D00F016A7 /* cywt.json in Resources */,
+				1C7AE89F1C2E440300F016A7 /* ILProductCell.xib in Resources */,
+				1C7AE8971C2E3D1D00F016A7 /* products.json in Resources */,
 				1C5271AA1C2ACBF300495B39 /* LaunchScreen.storyboard in Resources */,
 				1C704E581C2D9CB1005948F2 /* ILTestViewController.xib in Resources */,
 				1C7AE88C1C2E252B00F016A7 /* MBProgressHUD.bundle in Resources */,
 				1C5271A71C2ACBF300495B39 /* Assets.xcassets in Resources */,
 				1C5271A51C2ACBF300495B39 /* Main.storyboard in Resources */,
+				1C7AE8961C2E3D1D00F016A7 /* help.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,12 +505,15 @@
 			files = (
 				1C7AE88B1C2E252B00F016A7 /* MBProgressHUD+MJ.m in Sources */,
 				1C1335281C2C3B8500254DFB /* ILSettingItem.m in Sources */,
+				1C7AE8901C2E2D5B00F016A7 /* ILProduceViewController.m in Sources */,
 				1C704E571C2D9CB1005948F2 /* ILTestViewController.m in Sources */,
 				1C13352E1C2C496E00254DFB /* ILSettingCell.m in Sources */,
 				1C5271D11C2AE7AD00495B39 /* ILHallViewController.m in Sources */,
 				1C5271CE1C2AD91F00495B39 /* ILTabBarButton.m in Sources */,
 				1C5271D41C2AF05600495B39 /* ILNavigationController.m in Sources */,
+				1C7AE89E1C2E440300F016A7 /* ILProductCell.m in Sources */,
 				1C7AE88D1C2E252B00F016A7 /* MBProgressHUD.m in Sources */,
+				1C7AE89A1C2E3FE700F016A7 /* ILProduct.m in Sources */,
 				1C52719F1C2ACBF300495B39 /* AppDelegate.m in Sources */,
 				1C13352B1C2C44E800254DFB /* ILSettingGroup.m in Sources */,
 				1C52719C1C2ACBF300495B39 /* main.m in Sources */,
