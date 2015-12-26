@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^ILSettingItemOption)();
 @interface ILSettingItem : NSObject
 
 @property(nonatomic, copy) NSString *title;
@@ -15,4 +16,6 @@
 
 + (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title;
 
+//保存一段功能
+@property(nonatomic, copy) ILSettingItemOption option;
 @end

@@ -14,6 +14,7 @@
 #import "ILSettingArrowItem.h"
 #import "ILSettingSwichItem.h"
 #import "ILTestViewController.h"
+#import "MBProgressHUD+MJ.h"
 
 @interface ILSetingTableViewController ()
 
@@ -31,9 +32,10 @@
     if (_datalist == nil) {
         _datalist = [NSMutableArray array];
         
-        ILSettingArrowItem *pushNotes = [ILSettingArrowItem itemWithIcon:@"MorePush" title:@"消息推送"];
+        //ILSettingArrowItem *pushNotes = [ILSettingArrowItem itemWithIcon:@"MorePush" title:@"消息推送"];
+        ILSettingArrowItem *pushNotes = [ILSettingArrowItem itemWithIcon:@"MorePush" title:@"消息推送" destVaClass:[ILTestViewController class]];
         
-        pushNotes.destVcClass = [ILTestViewController class];
+        //pushNotes.destVcClass = [ILTestViewController class];
         
         ILSettingItem *yaoyiyao = [ILSettingSwichItem itemWithIcon:@"handShake" title:@"摇一摇选机"];
         //NSArray *group0 = @[pushNotes, yaoyiyao];
@@ -43,6 +45,14 @@
         //group0.footer = @"尾部";
         
         ILSettingItem *newVersion = [ILSettingSwichItem itemWithIcon:@"MoreUpdate" title:@"检查版本"];
+        newVersion.option = ^{
+            
+            MBProgressHUD show
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
+            });
+        };
+        
         ILSettingItem *help = [ILSettingArrowItem itemWithIcon:@"MoreHelp" title:@"帮助"];
         
         //NSArray *group1 = @[newVersion, help];
@@ -99,6 +109,7 @@
     return group.footer;
 }
 
+//点击选中
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     ILSettingGroup *group = self.datalist[indexPath.section];
@@ -107,8 +118,11 @@
     if ([item isKindOfClass:[ILSettingArrowItem class]]) {
         ILSettingArrowItem *ArrowItem = (ILSettingArrowItem *)item;
         
-        UIViewController *vc = [[ArrowItem.destVcClass alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (ArrowItem.destVcClass) {
+            UIViewController *vc = [[ArrowItem.destVcClass alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+       
     }
     
 }
